@@ -15,6 +15,6 @@ docker run -it -h cnode1 --name=cnode1 hsteininger/slurmmaster /bin/bash
 
 
 docker attach {cmaster,cbackup,cnode[1-99]}
+
+
 /root/bin/start.sh
-
-
