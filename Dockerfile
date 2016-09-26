@@ -9,6 +9,8 @@ MAINTAINER Herbert Steininger <hsteininger@hsteininger.de>
 
 #set env variables
 env DEBIAN_FRONTEND noninteractive
+ENV http_proxy 'http://172.17.7.21'
+ENV https_proxy 'http://172.17.7.21'
 
 #set timezone
 RUN echo "TZ='Europe/Berlin'; export TZ" >> /root/.bashrc
@@ -24,4 +26,4 @@ ADD ./start.sh /root/bin/
 #EXPOSE 6817
 #EXPOSE 6818
 
-#ENTRYPOINT /root/bin/start.sh
+ENTRYPOINT /root/bin/start.sh
