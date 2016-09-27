@@ -4,9 +4,9 @@ slurmd -cv
 
 
 cat << EOF >> /etc/hosts
-172.18.0.2	cmaster
-172.18.0.3	cbackup
-172.18.0.4	cnode1
+172.17.0.2	cmaster
+172.17.0.3	cbackup
+172.17.0.4	cnode1
 EOF
 
 case ${machinename} in

@@ -8,7 +8,7 @@ FROM debian
 MAINTAINER Herbert Steininger <hsteininger@hsteininger.de>
 
 #set env variables
-env DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 ENV http_proxy 'http://172.17.7.21'
 ENV https_proxy 'http://172.17.7.21'
 
